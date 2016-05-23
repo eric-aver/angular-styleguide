@@ -137,7 +137,11 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 **[Back to top](#table-of-contents)**
 
 ## IIFE
+
 ### JavaScript Scopes
+
+** We don't currently do this -- doesn't seem important to me. **
+
 ###### [Style [Y010](#style-y010)]
 
   - Wrap Angular components in an Immediately Invoked Function Expression (IIFE).
@@ -282,6 +286,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   ```
 
 ### Named vs Anonymous Functions
+
+** We don't do this -- would provide motivation for IIFE, seems minimal gains **
+
 ###### [Style [Y024](#style-y024)]
 
   - Use named functions instead of passing an anonymous function in as a callback.
@@ -320,7 +327,10 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ## Controllers
 
+** We don't do contrallerAs regularly, seems like it would be a good change **
+
 ### controllerAs View Syntax
+
 ###### [Style [Y030](#style-y030)]
 
   - Use the [`controllerAs`](http://www.johnpapa.net/do-you-like-your-angular-controllers-with-or-without-sugar/) syntax over the `classic controller with $scope` syntax.
@@ -434,6 +444,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   ```
 
 ### Bindable Members Up Top
+
+** We don't do this, seems useful **
+
 ###### [Style [Y033](#style-y033)]
 
   - Place bindable members at the top of the controller, alphabetized, and not spread through the controller code.
@@ -527,6 +540,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   ```
 
 ### Function Declarations to Hide Implementation Details
+
+** We don't do this, seems necessary if we are doing the above **
+
 ###### [Style [Y034](#style-y034)]
 
   - Use function declarations to hide implementation details. Keep your bindable members up top. When you need to bind a function in a controller, point it to a function declaration that appears later in the file. This is tied directly to the section Bindable Members Up Top. For more details see [this post](http://www.johnpapa.net/angular-function-declarations-function-expressions-and-readable-code/).
@@ -669,6 +685,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
     *Why?*: Reusing controllers with several views is brittle and good end-to-end (e2e) test coverage is required to ensure stability across large applications.
 
 ### Assigning Controllers
+
+** Seems like an edge case **
+
 ###### [Style [Y038](#style-y038)]
 
   - When a controller must be paired with a view and either component may be re-used by other controllers or views, define controllers along with their routes.
@@ -728,6 +747,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 ## Services
 
 ### Singletons
+
+** I don't quite understand this one. **
+
 ###### [Style [Y040](#style-y040)]
 
   - Services are instantiated with the `new` keyword, use `this` for public methods and variables. Since these are so similar to factories, use a factory instead for consistency.
@@ -779,6 +801,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
     Note: [All Angular services are singletons](https://docs.angularjs.org/guide/services).
 
 ### Accessible Members Up Top
+
+** This could be useful, particularly with larger services **
+
 ###### [Style [Y052](#style-y052)]
 
   - Expose the callable members of the service (its interface) at the top, using a technique derived from the [Revealing Module Pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript).
@@ -836,6 +861,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
     ![Factories Using "Above the Fold"](https://raw.githubusercontent.com/johnpapa/angular-styleguide/master/a1/assets/above-the-fold-2.png)
 
 ### Function Declarations to Hide Implementation Details
+
+** Useful again ... **
+
 ###### [Style [Y053](#style-y053)]
 
   - Use function declarations to hide implementation details. Keep your accessible members of the factory up top. Point those to function declarations that appears later in the file. For more details see [this post](http://www.johnpapa.net/angular-function-declarations-function-expressions-and-readable-code).
