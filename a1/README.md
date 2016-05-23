@@ -140,7 +140,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### JavaScript Scopes
 
-** We don't currently do this -- doesn't seem important to me. **
+**We don't currently do this -- doesn't seem important to me.**
 
 ###### [Style [Y010](#style-y010)]
 
@@ -287,7 +287,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Named vs Anonymous Functions
 
-** We don't do this -- would provide motivation for IIFE, seems minimal gains **
+**We don't do this -- would provide motivation for IIFE, seems minimal gains**
 
 ###### [Style [Y024](#style-y024)]
 
@@ -327,7 +327,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ## Controllers
 
-** We don't do contrallerAs regularly, seems like it would be a good change **
+**We don't do contrallerAs regularly, seems like it would be a good change**
 
 ### controllerAs View Syntax
 
@@ -445,7 +445,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Bindable Members Up Top
 
-** We don't do this, seems useful **
+**We don't do this, seems useful**
 
 ###### [Style [Y033](#style-y033)]
 
@@ -541,7 +541,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Function Declarations to Hide Implementation Details
 
-** We don't do this, seems necessary if we are doing the above **
+**We don't do this, seems necessary if we are doing the above**
 
 ###### [Style [Y034](#style-y034)]
 
@@ -686,7 +686,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Assigning Controllers
 
-** Seems like an edge case **
+**Seems like an edge case**
 
 ###### [Style [Y038](#style-y038)]
 
@@ -748,7 +748,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Singletons
 
-** I don't quite understand this one. **
+**I don't quite understand this one.**
 
 ###### [Style [Y040](#style-y040)]
 
@@ -802,7 +802,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Accessible Members Up Top
 
-** This could be useful, particularly with larger services **
+**This could be useful, particularly with larger services**
 
 ###### [Style [Y052](#style-y052)]
 
@@ -862,7 +862,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Function Declarations to Hide Implementation Details
 
-** Useful again ... **
+**Useful again ...**
 
 ###### [Style [Y053](#style-y053)]
 
