@@ -287,7 +287,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Named vs Anonymous Functions
 
-**We don't do this -- would provide motivation for IIFE, seems minimal gains**
+**We will continue to not do this**
 
 ###### [Style [Y024](#style-y024)]
 
@@ -327,9 +327,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ## Controllers
 
-**We don't do contrallerAs regularly, seems like it would be a good change**
-
 ### controllerAs View Syntax
+
+**We will begin using this view syntax for better readability**
 
 ###### [Style [Y030](#style-y030)]
 
@@ -356,6 +356,9 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   ```
 
 ### controllerAs Controller Syntax
+
+**We will stick with the classic $scope syntax**
+
 ###### [Style [Y031](#style-y031)]
 
   - Use the `controllerAs` syntax over the `classic controller with $scope` syntax.
@@ -445,7 +448,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Bindable Members Up Top
 
-**We don't do this, seems useful**
+**We will take a middle path here. We _will_ put the bindable members at the top, but will not declare them seperately**
 
 ###### [Style [Y033](#style-y033)]
 
@@ -541,7 +544,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Function Declarations to Hide Implementation Details
 
-**We don't do this, seems necessary if we are doing the above**
+**We will use function declarations rather than expressions in order to allow helper methods below**
 
 ###### [Style [Y034](#style-y034)]
 
@@ -686,8 +689,6 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Assigning Controllers
 
-**Seems like an edge case**
-
 ###### [Style [Y038](#style-y038)]
 
   - When a controller must be paired with a view and either component may be re-used by other controllers or views, define controllers along with their routes.
@@ -748,7 +749,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ### Singletons
 
-**I don't quite understand this one.**
+**We will use factory rather than service.**
 
 ###### [Style [Y040](#style-y040)]
 
